@@ -2,7 +2,7 @@
 
 Fazendo download do instalador e executando o instalador: 💾
 ```bash
-sudo apt install -y git && git clone https://github.com/AutoAtende/AA-INSTALLER.git autoatende && sudo chmod -R 777 ./autoatende && cd ./autoatende && sudo ./install_primaria
+sudo apt install -y git && git clone https://github.com/ronald-b/RONI-INSTALLER.git installer && sudo chmod -R 777 ./installer && cd ./installer && sudo ./install_primaria
 ```
 
 ## Requisitos
@@ -54,6 +54,7 @@ sudo ufw allow ssh
 sudo ufw allow 22
 sudo ufw allow 80
 sudo ufw allow 443
+sudo ufw allow 775
 sudo ufw allow 5432
 sudo ufw allow 6379
 sudo ufw enable

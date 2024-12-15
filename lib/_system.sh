@@ -32,13 +32,13 @@ EOF
 #######################################
 system_git_clone() {
   print_banner
-  printf "${WHITE} 💻 Fazendo download do código AutoAtende...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Fazendo download do código Whaticket...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
 
 sudo su - deploy <<EOF
-  git clone https://lucassaud:${token_code}@github.com/AutoAtende/AA-APP.git /home/deploy/${instancia_add}
+  git clone https://${token_code}@github.com/ronald-b/whaticket.git /home/deploy/${instancia_add}
 EOF
 
   sleep 2
@@ -51,7 +51,7 @@ EOF
 #######################################
 system_update() {
   print_banner
-  printf "${WHITE} 💻 Vamos preparar o sistema para o AutoAtende...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos preparar o sistema...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -74,7 +74,7 @@ EOF
 #######################################
 deletar_tudo() {
   print_banner
-  printf "${WHITE} 💻 Vamos deletar o AutoAtende...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos deletar o Sistema...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
