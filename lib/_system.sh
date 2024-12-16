@@ -38,7 +38,7 @@ system_git_clone() {
   sleep 2
 
 sudo su - deploy <<EOF
-  git clone https://${token_code}@github.com/ronald-b/whaticket.git /home/deploy/${instancia_add}
+  git clone https://${token_code}@github.com/ronald-b/whaticket45.git /home/deploy/${instancia_add}
 EOF
 
   sleep 2
